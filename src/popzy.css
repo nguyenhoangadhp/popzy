@@ -1,10 +1,11 @@
-.popzy__backdrop {
+.popzy {
     position: fixed;
     inset: 0;
+    z-index: 9999;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.7);
     opacity: 0;
     visibility: hidden;
     transition: opacity, visibility;
@@ -23,10 +24,10 @@
 .popzy__container {
     position: relative;
     width: min(600px, 90%);
-    padding: 28px 20px 0;
-    border-radius: 10px;
+    padding: 20px;
+    border-radius: 6px;
     background: #fff;
-    transform: scale(0);
+    transform: scale(0.5);
     transition: transform 0.3s;
 }
 
@@ -40,10 +41,13 @@
     color: #666;
     background: #ebebeb;
     font-size: 2rem;
+    border: none;
+    outline: none;
 }
 
 .popzy__close:hover {
     color: #333;
+    cursor: pointer;
 }
 
 .popzy__content {
@@ -54,10 +58,10 @@
 .popzy__footer {
     display: flex;
     justify-content: flex-end;
-    gap: 10px;
-    padding: 20px 0;
+    gap: 8px;
+    padding-top: 20px;
 }
 
-.popzy__no-scroll {
+.popzy--no-scroll {
     overflow: hidden;
 }

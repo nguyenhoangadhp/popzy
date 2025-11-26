@@ -463,8 +463,10 @@ modal.close();</code></pre>
             // Youtube Embed Modal
             const modal7Btn = document.querySelector(".js-popzy-modal-7");
             const modal7 = new Popzy({
-                content: `<iframe width="560" height="315" src="https://youtu.be/iicfmXFALM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+                content: `<iframe width="560" height="315" src="https://www.youtube.com/embed/iicfmXFALM8" title="Chill Drive - Aesthetic Music ~ Lofi hip hop mix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
+                destroyOnClose: false,
             });
+
             modal7Btn.onclick = () => {
                 modal7.open();
             };
